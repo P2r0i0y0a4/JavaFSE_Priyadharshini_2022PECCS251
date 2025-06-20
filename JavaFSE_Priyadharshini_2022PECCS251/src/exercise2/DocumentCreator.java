@@ -1,6 +1,12 @@
-package javafse;
+package exercise2;
+
+import javafse.DocumentFactory;
+import javafse.ExcelFactoryDocument;
+import javafse.PdfDocumentFactory;
+import javafse.WordDocumentFactory;
+
 public class DocumentCreator {
-    public static void main(String[] args) {
+	public static void main(String[] args) {
         System.out.println("Demonstrating Factory Method Pattern:\n");
         // Create a Word Document
         DocumentFactory wordFactory = new WordDocumentFactory();
