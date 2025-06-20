@@ -27,5 +27,5 @@ public class Inventory {
         products.remove(productId);
     }
 
-    // Additional methods can be added for searching, listing products, etc.
+    
 }
