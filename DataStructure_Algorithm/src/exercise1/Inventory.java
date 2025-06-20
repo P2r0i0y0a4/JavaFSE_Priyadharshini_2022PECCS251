@@ -2,12 +2,11 @@ package exercise1;
 import java.util.HashMap;
 
 public class Inventory {
-    private HashMap<String, Product> products;
+    HashMap<String, Product> products;
 
     public Inventory() {
         products = new HashMap<>();
     }
-
     // Add a product
     public void addProduct(Product product) {
         products.put(product.getProductId(), product);
