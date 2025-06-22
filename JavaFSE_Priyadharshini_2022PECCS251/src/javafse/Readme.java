@@ -4,7 +4,7 @@ public class Readme {
 	
 	/*
 	 * Exercise1:
-	 * ✅ Step-by-Step Solution
+	 * Step-by-Step Solution
           1. Create Java Project:
              Project Name: SingletonPatternExample
 
