@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- Console Appender: Logs messages to the console (standard output) -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <!-- Pattern for console output: timestamp, thread, log level, logger name, message, newline -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- File Appender: Logs messages to a file -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <!-- The file where logs will be written -->
+        <file>app.log</file>
+        <encoder>
+            <!-- Pattern for file output: same as console for consistency -->
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Root Logger Configuration -->
+    <!-- This defines the default logging level and which appenders receive messages -->
+    <root level="debug"> <!-- Set the default logging level for all loggers to DEBUG -->
+        <appender-ref ref="STDOUT" /> <!-- Send all messages to the Console Appender -->
+        <appender-ref ref="FILE" />   <!-- Send all messages to the File Appender -->
+    </root>
+
+    <!-- You can also configure specific loggers with different levels or appenders.
+         For example, to only log INFO messages for a specific package to the console:
+    <logger name="com.example.someotherpackage" level="info" additivity="false">
+        <appender-ref ref="STDOUT" />
+    </logger>
+    -->
+
+</configuration>
