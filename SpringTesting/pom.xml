@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.example</groupId>
+  <artifactId>SpringTesting</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <!-- Spring Boot Starter: Core Spring Boot dependencies, including auto-configuration, logging, and YAML. -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+
+    <!-- Spring Boot Web Starter: Dependencies for building web, including RESTful, applications using Spring MVC. -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-web</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+
+    <!-- Spring Boot Test Starter: Dependencies for testing Spring Boot applications, including JUnit, Mockito, and Spring Test. -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <version>3.1.1</version>
+        <scope>test</scope> <!-- This dependency is only needed for testing, not for production. -->
+    </dependency>
+
+    <!-- Logback Classic: A popular logging framework, included by Spring Boot by default. -->
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.11</version>
+    </dependency>
+    <!-- Spring Boot Data JPA -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-data-jpa</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+
+    <!-- H2 Database -->
+    <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>2.1.214</version>  <!-- Must specify version -->
+        <scope>runtime</scope>
+    </dependency>
+
+    <!-- Spring Boot Starter Test -->
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+        <version>3.1.1</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>
+
+
+
+</project>
