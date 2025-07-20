@@ -1,0 +1,5 @@
+GET http://localhost:8080/customers/101
+→ Routes to → http://localhost:8081/101
+
+GET http://localhost:8080/billing/invoice/567
+→ Routes to → http://localhost:8082/invoice/567
